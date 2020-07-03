@@ -266,6 +266,8 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
 
+subprocess.run("pip3 list --format=columns", shell=True)
+print("----------------------------------------------------------\n")
 
 def setup(app):
     github_code_repo = 'https://github.com/SymbiFlow/prjxray/'
